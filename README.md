@@ -10,6 +10,7 @@
   
 **Challenges & Solutions**  
 • The Word JavaScript API requires execution within Word.run and explicit synchronization.  
-  This logic was isolated to keep it easy to reason about.  
-• ESLint initially reported Word as undefined; this was resolved by declaring it as a global, reflecting how Office.js provides it at runtime.  
+This logic was isolated to keep it easy to reason about.  
+• ESLint initially reported Word as undefined.  
+This was resolved by declaring it as a global, reflecting how Office.js provides it at runtime.  
 • The task pane loads a few seconds after Word in development mode, which is expected due to the local dev server and sideloading process.  
